@@ -1,4 +1,4 @@
-# Ruby Self
+# Basics of Self
 
 ## Objectives
 
