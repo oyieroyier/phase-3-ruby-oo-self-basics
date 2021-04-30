@@ -1,10 +1,10 @@
-# Basics of Self
+# Self Basics
 
-## Objectives
+## Learning Goals
 
-1. Understand the concept of self-awareness in object-oriented programming. 
-2. Understand how the `self` keyword works.
-3. Use `self` within an instance method to refer to the class instance on which that method is being called. 
+- Understand the concept of self-awareness in object-oriented programming. 
+- Understand how the `self` keyword works.
+- Use `self` within an instance method to refer to the class instance on which that method is being called. 
 
 ## Introduction
 
