@@ -104,7 +104,9 @@ The `self` keyword **refers to the instance**, or object, that the
 So, when we call `#showing_self` on `fido`, the method will `puts` out to the
 terminal the `Dog` instance that is `fido`.
 
-In Object-Oriented JavaScript, the `this` keyword behaves similarly, where
+If you’re familiar with Object Oriented JavaScript from previous experience, the
+closest equivalent to `self` in Ruby is `this` in JavaScript. Again, no worries
+if you haven't seen OOJS before. The `this` keyword behaves similarly, where
 `this` refers to **the object to the left of the dot** when a method is called
 on an object:
 
