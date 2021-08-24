@@ -14,7 +14,7 @@ When we create a class, each new instance of a class is considered to be an
 
 For example, if we create a `Dog` class like this:
 
-```ruby
+```rb
 class Dog
 
   attr_accessor :name
@@ -32,20 +32,20 @@ end
 
 We could create a new instance of `Dog` like this:
 
-```ruby
+```rb
 fido = Dog.new("Fido")
 ```
 
 We could then access Fido's name like this:
 
-```ruby
+```rb
 fido.name
 # => "Fido"
 ```
 
 ...or tell Fido to bark like this:
 
-```ruby
+```rb
 fido.bark
 # => "Woof!"
 ```
@@ -73,7 +73,7 @@ Try this:
 
 Copy and paste the following code into IRB:
 
-```ruby
+```rb
 class Dog
   def showing_self
     puts self
@@ -91,7 +91,7 @@ fido.showing_self
 
 The call to `#showing_self` should output:
 
-```bash
+```console
 #<Dog:0x007faf90a88cd8>
 ```
 
@@ -127,7 +127,7 @@ fido.showingThis();
 Let's say that Fido here is getting adopted. Fido's new owner is Sophie. Let's
 write an `attr_accessor` on our `Dog` for the owner attribute.
 
-```ruby
+```rb
 class Dog
   attr_accessor :name, :owner
 
@@ -141,7 +141,7 @@ end
 Now we can set Fido's `owner` attribute equal to the string of `"Sophie"`. The
 name of his new owner:
 
-```ruby
+```rb
 fido.owner = "Sophie"
 
 fido.owner
@@ -154,7 +154,7 @@ adopted.
 
 To represent this with code, we could write an `#adopted` method like this:
 
-```ruby
+```rb
 def adopted(dog, owner_name)
   dog.owner = owner_name
 end
@@ -163,7 +163,7 @@ end
 Here we have a method that takes in two arguments, an instance of the `Dog`
 class and an owner's name. We could call our method like this:
 
-```ruby
+```rb
 adopted(fido, "Sophie")
 
 # now we can ask Fido who his owner is:
@@ -180,7 +180,7 @@ adopted.
 
 Let's refactor our code above into an instance method on the `Dog` class.
 
-```ruby
+```rb
 class Dog
   attr_accessor :name, :owner
 
